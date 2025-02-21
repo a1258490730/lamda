@@ -1,0 +1,18 @@
+证书设置
+export CERTIFICATE=~/desktop/code/lamda/tools/lamda.pem
+
+国内
+
+python3.9 startmitm.py 10.0.0.172
+
+
+国外
+python startmitm.py 192.168.31.77 --upstream http://127.0.0.1:8800 --dns https://1.1.1.1/dns-query 
+
+
+
+
+
+
+
+frida-trace -H 192.168.31.77:60000 --certificate C:\Users\Chain9j\Desktop\root\lamda-8.0\tools\lamda.pem --token ougk97axl2fmeidh -p 7745 -j 'libexample.so!putString'

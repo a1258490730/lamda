@@ -185,7 +185,7 @@ proxy = int(os.environ.get("PROXYPORT",
                     randint(28080, 58080)))
 webport = randint(28080, 58080)
 lamda = int(os.environ.get("PORT",
-                    65000))
+                    60000))
 
 argp.add_argument("device", nargs=1)
 mod = argp.add_mutually_exclusive_group(required=False)
